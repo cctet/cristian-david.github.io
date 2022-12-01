@@ -1,0 +1,185 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 5px;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+    min-height: 100%;
+}
+.logo{
+    width: 100px;
+    border-radius: 100px;
+    margin-left: 0px;
+    margin-top: 0%;
+    padding: 0%;
+}
+.menudeproductos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.logo:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.logo2{
+    width: 100px;
+    border-radius: 100px;
+}
+.logo2:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.grid-container > *{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.grid-container{
+    display: grid;
+    gap: 100px;
+    grid-template-areas: 
+    "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer";
+}
+h1{
+    color: rgb(185, 29, 29);
+}
+.header {
+    grid-area: header;
+    background-image: url('cultivo.jpg');
+    background-size:cover;
+    display: grid;
+    height: 150px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.uno{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 40px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.uno:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.dos{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 40px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.dos:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.tres{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 40px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.tres:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.cuatro{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+    border-radius: 40px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.cuatro:hover{
+    box-shadow: -1px 1px 7px 0px rgba(165, 42, 42, 0.75);
+}
+.cinco{
+    box-shadow: -1px 1px 7px 0px rgba(12, 12, 12, 0.411);
+    border-radius: 40px;
+    max-width: 110px;
+    padding-top: 10px;
+}
+.cinco:hover{
+    box-shadow: -1px 1px 7px 0px rgba(12, 11, 11, 0.178);
+}
+.navbar {
+    grid-area: navbar;
+    background-image: url('campo timbiqui.jpg');
+    background-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    padding: 10px;
+}
+.imgnav{
+    width: 90px;
+    border-radius: 20px;
+}
+.logo3{
+    width: 90px;
+}
+.sidebar {
+    grid-area: sidebar;
+    background-image: url('campo.jpg');
+    background-position: left;
+    background-size: cover;
+    text-align: justify;
+    color: rgb(14, 15, 15);
+}
+.main {
+    grid-area: main;
+    background-image: url('campo.jpg');
+    background-size: cover;
+    background-position-x: left;
+}
+.imgmain{
+   height: 150px;
+    border-radius: 20px;
+}
+.imgmain:hover{
+    box-shadow: -1px 1px 7px 0px rgba(0,0,0,0.75);
+}
+.footer {
+    grid-area: footer;
+    background-image: url('mi campo.jpg');
+    background-size: 120px;
+    background-position-y: start;
+}
+.imgfooter{
+    height: 150px;
+}
+@media (min-width:600px){
+    .grid-container{
+        grid-gap: 20px;
+        grid-template: 
+        "header  header" 100px
+        "navbar  navbar" auto
+        "sidebar main"   auto 
+        "footer  footer" 70px/
+        200px    auto;
+        overflow-y: scroll;
+    }
+}
+@media (min-width:900px){
+    .grid-container{
+        grid-template: 
+        "header  header header"  200px
+        "navbar  main   sidebar" auto
+        "footer  footer footer"  200px/
+        150px    auto    200px;
+        overflow-y: scroll;
+    }
+    .navbar {
+        grid-area: navbar;
+        grid-template: 
+        "uno"       100px
+        "dos"       100px
+        "tres"      100px
+        "cuatro"    100px;
+        grid-row-gap: 10px;
+    }
+}
+
+.facebook{
+    height: 40px;
+    width: 40px;
+}
